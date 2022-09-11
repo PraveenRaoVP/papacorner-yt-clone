@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 
 const SearchBar = () => {
-
+  // update search each time a key is pressed.
   const [searchElement, setSearchElement] = useState('');
 
   return (
