@@ -13,6 +13,7 @@ const Feed = () => {
 
   //dynamic code to fetch videos by selected Category ( refer fetchFromAPI.js )
   useEffect(() => {
+    setVideos([]);
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items));
       console.log(selectedCategory)
