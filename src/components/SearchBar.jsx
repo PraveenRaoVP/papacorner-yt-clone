@@ -22,7 +22,7 @@ const SearchBar = () => {
     >
       <input 
         className="search-bar"
-        placeholder="Search.."
+        placeholder="Search..."
         value=""
         onChange={(e)=>{
         }}
@@ -34,4 +34,4 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default SearchBar;

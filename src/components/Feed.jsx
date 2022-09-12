@@ -9,16 +9,19 @@ const Feed = () => {
   // TODO: change code to update category when sidebar category is clicked 
   const [selectedCategory, setselectedCategory] = useState('New');
   //get videos
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState(null);
 
   //dynamic code to fetch videos by selected Category ( refer fetchFromAPI.js )
   useEffect(() => {
-    setVideos([]);
+    setVideos(null);
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
       .then((data) => setVideos(data.items));
-      console.log(selectedCategory)
+      console.log(selectedCategory);
   }, [selectedCategory]);
  
+  
+
+
   return (
     <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
         <Box sx={{ height: {sx: 'auto', md: '92vh' }, borderRight: '1px solid #3d3d3d', px: { sx: 0, md: 2 } }}>
