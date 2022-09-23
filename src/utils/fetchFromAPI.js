@@ -25,4 +25,5 @@ export const fetchFromAPI = async (url) => {
   return data;
 }
 
+// export fetchFromAPI
 export default fetchFromAPI;

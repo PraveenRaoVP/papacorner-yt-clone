@@ -9,7 +9,9 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 
 const VideoDetail = () => {
 
+  // video details - desc, date of upload, comments
   const [videoDetail, setVideoDetail] = useState(null);
+  //related videos sidebar right
   const [videoRelated, setVideoRelated] = useState(null);
 
   const { id } = useParams();
